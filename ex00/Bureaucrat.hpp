@@ -6,7 +6,7 @@
 /*   By: averheij <averheij@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/01/21 16:37:17 by averheij      #+#    #+#                 */
-/*   Updated: 2021/01/21 17:22:26 by averheij      ########   odam.nl         */
+/*   Updated: 2021/01/22 12:37:54 by averheij      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,12 @@
 # define BUREAUCRAT_HPP
 # include <exception>
 # include <iostream>
+
+# ifndef GRADE_BOUNDS
+#  define GRADE_BOUNDS
+#  define GRADEMAX	1
+#  define GRADEMIN	150
+# endif
 
 class Bureaucrat {
 	public:
@@ -45,8 +51,6 @@ class Bureaucrat {
 	private:
 		std::string const		_name;
 		int						_grade;
-		static const int		_gradeMax = 1;
-		static const int		_gradeMin = 150;
 };
 
 std::ostream &					operator<<(std::ostream & o, Bureaucrat const & b);
