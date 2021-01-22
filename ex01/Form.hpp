@@ -6,7 +6,7 @@
 /*   By: averheij <averheij@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/01/22 12:10:06 by averheij      #+#    #+#                 */
-/*   Updated: 2021/01/22 13:13:44 by averheij      ########   odam.nl         */
+/*   Updated: 2021/01/22 13:41:04 by averheij      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,14 +43,14 @@ class Form {
 		class GradeTooHighException : public std::exception {
 			public:
 				virtual const char* what() const throw() {
-					return ("Form grade too high");
+					return ("grade too high");
 				}
 		};
 
 		class GradeTooLowException : public std::exception {
 			public:
 				virtual const char* what() const throw() {
-					return ("Form grade too low");
+					return ("grade too low");
 				}
 		};
 	private:

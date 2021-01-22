@@ -6,7 +6,7 @@
 /*   By: averheij <averheij@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/01/21 16:37:30 by averheij      #+#    #+#                 */
-/*   Updated: 2021/01/22 13:23:40 by averheij      ########   odam.nl         */
+/*   Updated: 2021/01/22 13:40:26 by averheij      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 int		main(void) {
 	Bureaucrat		jeff("Jeff", 1);
+	Bureaucrat		bob("Bob", 150);
 	Form			tmp;
 
 	std::cout << std::endl << "\tMin grade creation" << std::endl;
@@ -26,8 +27,8 @@ int		main(void) {
 	std::cout << form2;
 
 	std::cout << std::endl << "\tSign" << std::endl;
-	std::cout << jeff << form1;
-	jeff.signForm(form1);
+	std::cout << bob << form1;
+	bob.signForm(form1);
 	std::cout << form1;
 
 	std::cout << std::endl << "\tSign exception" << std::endl;
