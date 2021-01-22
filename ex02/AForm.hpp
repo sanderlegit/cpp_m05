@@ -6,7 +6,7 @@
 /*   By: averheij <averheij@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/01/22 12:10:06 by averheij      #+#    #+#                 */
-/*   Updated: 2021/01/22 14:43:36 by averheij      ########   odam.nl         */
+/*   Updated: 2021/01/22 15:17:04 by averheij      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ class AForm {
 		AForm(void);
 		AForm(std::string name_, int signg_, int execg_);
 		AForm(AForm const & src);
-		~AForm(void);
+		virtual ~AForm(void);
 
 
 		std::string const &		getName(void) const;
